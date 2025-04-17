@@ -1,24 +1,24 @@
-package com.products;
+package com.model;
 
 public class Products {
-	private int id;
+	private int productId;
 	private String name;
 	private String description;
 	private double price;
 	private int quantity;
-	public Products(int id, String name, String description, double price, int quantity) {
+	public Products(int productId, String name, String description, double price, int quantity) {
 		super();
-		this.id = id;
+		this.productId = productId;
 		this.name = name;
 		this.description = description;
 		this.price = price;
 		this.quantity = quantity;
 	}
-	public int getId() {
-		return id;
+	public int getProductId() {
+		return productId;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setProductId(int productId) {
+		this.productId = productId;
 	}
 	public String getName() {
 		return name;
@@ -46,8 +46,8 @@ public class Products {
 	}
 	@Override
 	public String toString() {
-		return "Products [id=" + id + ", name=" + name + ", description=" + description + ", price=" + price
-				+ ", quantity=" + quantity + "]";
+		return "Products [productId=" + productId + ", name=" + name + ", description=" + description + ", price="
+				+ price + ", quantity=" + quantity + "]";
 	}
 	
 	
